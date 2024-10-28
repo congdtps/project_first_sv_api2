@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+#main #content{}
+
+
+#content .head-list h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#content .table-list-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+    gap:100px
+}
+
+#content .table-list-info table{
+}
+
+#content .table-list-info table th,td{
+    padding: 20px;
+    text-align: center;
+}
+
+#content .table-list-info .btn-fix,.btn-delete{
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-weight: 600;
+    color:#fff;
+    cursor: pointer;
+}
+
+#content .table-list-info .btn-fix{
+    background-color: #3E39F7;
+}
+
+
+#content .table-list-info .btn-delete:hover,
+#content .table-list-info .btn-fix:hover{
+    opacity: 0.6;
+}
+
+
+#content .table-list-info .btn-delete{
+    background-color: #F73A39;
+}
+
+
+#content .table-list-info .btn-add{
+    border:none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color:#3E39F7;
+    text-transform: uppercase;
+    background-color: #fff;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+#content .table-list-info .btn-add:hover{
+    /* background-color: #000; */
+    transition: all 0.2s linear;
+    /* color:#fff; */
+    box-shadow: 10px 10px 0;
+}
+
+
+/* addinfo.html and form-fix */
+
+#content .form-fix.active{
+    display: flex;
+}
+
+#content .form-fix{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#content .form-add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#content .form-fix .about-form,
+#content .form-add .about-form{
+    border: 1px solid #000;
+    padding: 40px;
+    border-radius: 10px;
+    position: relative;
+    background-color: #fff;
+    animation: fadein 0.5s ease;
+}
+
+
+
+#content .form-fix .about-form .close_app,
+#content .form-add .about-form .close_app{
+    position: absolute;
+    top: 10px;
+    font-size: 20px;
+    right: 20px;
+    font-weight: 600;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#content .form-fix .about-form .close_app:hover,
+#content .form-add .about-form .close_app:hover{
+    color: #3E39F7;
+}
+
+#content .form-fix .about-form h1,
+#content .form-add .about-form h1{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#content .about-form .name_student,
+#content .about-form .pointing_student,
+#content .about-form .rating_student,
+#content .about-form .code_student{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#content .gender_student{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 20px;
+}
+
+
+#content .about-form .code_student label,
+#content .about-form .name_student label,
+#content .about-form .pointing_student label,
+#content .about-form .rating_student label{
+    min-width: 90px;
+}
+
+#content .about-form .name_student input,
+#content .about-form .pointing_student input,
+#content .about-form .rating_student input,
+#content .about-form .code_student input{
+    padding: 4px 12px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#content .about-form .gender_student select{
+    border: none;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 4px 12px;
+    width: 100%;
+}
+
+
+#content .about-form .about-btn{
+    text-align: center;
+}
+
+#content .about-btn .btn-fix-info,
+#content .about-btn .btn-add-info{
+    border:none;
+    width: 100%;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color:#3E39F7;
+    text-transform: uppercase;
+    background-color: #fff;
+    border: 2px solid #000;
+    cursor: pointer;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+#content .about-btn .btn-fix-info:hover,
+#content .about-btn .btn-add-info:hover{
+    background-color: #3E39F7;
+    color:#fff;
+}
+
+/* 
+#main .table-add-success.active{
+    display: flex;
+}
+
+#main .table-add-success{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#main .add-success{
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    animation: fadein 0.5s ease;
+}
+
+#main .add-success .btn-ok{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#main .add-success .btn-ok button{
+    border:none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    background-color: #3E39F7;
+    color:#fff;
+    cursor: pointer;
+}
+
+#main .add-success .btn-ok button:hover{
+    opacity: 0.7;
+} */
+
+
+@keyframes fadein {
+    from{
+        transform: translateY(-300px);
+    }
+    to{
+        transform: translateY(0px);
+
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sinh viên</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="main">
+        <div id="content">
+            <div class="head-list">
+                <h1>
+                Danh sách sinh viên
+                </h1>
+            </div>
+            <div class="table-list-info">
+                <table border="">
+                    <thead>
+                        <th>ID</th>
+                        <th>CODE</th>
+                        <th>NAME</th>
+                        <th>GENDER</th>
+                        <th>POINTING</th>
+                        <th>RATING</th>
+                        <th></th>
+                        <th></th>
+                    </thead>
+                    <tbody class="show_info">
+                        
+                    </tbody>
+                </table>
+                <div class="about-btn">
+                    <a href="addinfo.html">
+                        <button class="btn-add">Thêm sinh viên</button>
+                    </a>
+                        
+                </div>
+            </div>
+            <div class="form-fix js-form-fix">
+                <div class="about-form">
+                        <div onclick="close_app()" class="close_app js-close-app">
+                            x
+                        </div>
+                    <h1>Cập nhật sinh viên</h1>
+                    <form action="">
+                        <div class="code_student">
+                            <label for="">CODE</label>
+                            <input id="code_api" type="text" name="" id="" placeholder="PS12345">
+                        </div>
+                        <div class="name_student">
+                            <label for="">NAME</label>
+                            <input id="name_api" type="text" name="" id="" placeholder="Đỗ Minh Hiếu">
+                        </div>
+                        <div class="gender_student">
+                            <label for="">GENDER</label>
+                            <select id="gender_api" name="" id="">
+                                <option value="Nam">Nam</option>
+                                <option value="Nữ">Nữ</option>
+                            </select>
+                        </div>
+                        <div class="pointing_student">
+                            <label for="">POINTING</label>
+                            <input style="width: 100%;" id="pointing_api" type="text" min="0" max="10" name="" id="" placeholder="7">
+                        </div>
+                        <div class="rating_student">
+                            <label for="">RATING</label>
+                            <input style="width: 100%;" id="rating_api" type="text" min="0" max="10" name="" id="" placeholder="7.2">
+                        </div>
+                        </a>
+                        <div class="about-btn">
+                            <button id="btn_fix" class="btn-fix-info">Cập nhật</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="index.js">
+</script>
+
+</html>
